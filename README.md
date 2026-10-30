@@ -21,72 +21,17 @@ START -> calculate_bmi -> label_bmi -> END
 
 The notebook uses a typed `BMIState` dictionary to pass data between nodes.
 
-## Requirements
+### L6
 
-- Python 3.11 or newer
-- Jupyter Notebook or JupyterLab
-- `langgraph`
+1. Building a sequential workflow with LangGraph.
+2. Using typed dictionaries to manage state between nodes.
+3. Invoking the workflow with an initial state and retrieving the final state.
+4. Using LangGraph to create a simple BMI calculator with labeled categories.
+5. Demonstrating the use of LangGraph's `StateGraph` to define and execute a workflow.
+6. Showcasing the integration of LangGraph with LangChain's Google Generative AI model for prompt chaining.
+7. Illustrating how to create nodes for generating outliers and blogs based on input text.
+8. Highlighting the use of environment variables for API key management in LangGraph workflows.
+9. Providing a clear example of how to structure and execute a LangGraph workflow with typed state dictionaries.
 
-## Setup
 
-Create and activate a virtual environment from the repository root:
-
-```bash
-python -m venv .venv
-```
-
-On Windows:
-
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
-
-On macOS or Linux:
-
-```bash
-source .venv/bin/activate
-```
-
-Install the notebook dependencies:
-
-```bash
-python -m pip install --upgrade pip
-python -m pip install langgraph ipykernel jupyter
-```
-
-Register the environment as a Jupyter kernel:
-
-```bash
-python -m ipykernel install --user --name langgraph-learning --display-name "Python (LangGraph Learning)"
-```
-
-## Running the notebook
-
-Start Jupyter from the repository root:
-
-```bash
-jupyter notebook
-```
-
-Open `L6/prog1.ipynb`, select the `Python (LangGraph Learning)` kernel, and run
-the cells in order. The example uses an input of 70 kg and 1.75 m and prints
-the calculated BMI and category.
-
-## Repository structure
-
-```text
-.
-|-- L6/
-|   `-- prog1.ipynb    # Sequential BMI workflow
-|-- L7/ ... L28/       # Additional lesson directories
-`-- README.md
-```
-
-## Notes
-
-- Heights are expected in metres and weights in kilograms.
-- The notebook contains a local interpreter path check; select the active
-  virtual environment as the notebook kernel rather than relying on a
-  machine-specific path.
-- Do not commit API keys or other secrets. Keep local environment files out of
-  version control.
+### L7
