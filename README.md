@@ -35,3 +35,9 @@ The notebook uses a typed `BMIState` dictionary to pass data between nodes.
 
 
 ### L7
+
+1. Building a structured output model using Pydantic for essay evaluation.
+2. Creating a sequential workflow to evaluate essays based on language quality, depth of analysis, and clarity of thought.
+3. Defining a `UPSCState` typed dictionary to manage the state of the essay evaluation process.
+4. Implementing functions to evaluate language, analysis, and thought clarity of essays, returning feedback and scores.
+5. Demonstrating the use of LangGraph's `StateGraph` to define and execute a workflow for essay evaluation.
