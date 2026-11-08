@@ -41,3 +41,9 @@ The notebook uses a typed `BMIState` dictionary to pass data between nodes.
 3. Defining a `UPSCState` typed dictionary to manage the state of the essay evaluation process.
 4. Implementing functions to evaluate language, analysis, and thought clarity of essays, returning feedback and scores.
 5. Demonstrating the use of LangGraph's `StateGraph` to define and execute a workflow for essay evaluation.
+
+### L8 :
+
+### L9 :
+
+### L10 :
