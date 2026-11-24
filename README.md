@@ -4,46 +4,41 @@ This repository contains progressively organized examples for learning
 [LangGraph](https://langchain-ai.github.io/langgraph/) with Python. Each `L*`
 directory represents a lesson or experiment.
 
-## Current example
+## Lessons
 
-[`L6/prog1.ipynb`](./L6/prog1.ipynb) demonstrates a sequential workflow that:
+### L6 - Sequential workflows
 
-1. Accepts a person's weight and height.
-2. Calculates their body mass index (BMI).
-3. Assigns a BMI category.
-4. Returns the updated state from the compiled graph.
+- [`prog1.ipynb`](./L6/prog1.ipynb): Builds a sequential BMI calculator with
+  `StateGraph`, typed state, and the flow
+  `START -> calculate_bmi -> label_bmi -> END`.
+- [`prog2.ipynb`](./L6/prog2.ipynb): Builds a simple LLM-based application
+  using LangGraph and Google Generative AI.
+- [`prog3.ipynb`](./L6/prog3.ipynb): Demonstrates prompt chaining with
+  multiple workflow nodes.
 
-The workflow is built from two nodes:
+### L7 - Parallel workflows and essay evaluation
 
-```text
-START -> calculate_bmi -> label_bmi -> END
-```
+- [`prog1.ipynb`](./L7/prog1.ipynb): Runs independent cricket statistics
+  calculations in parallel before combining them into a summary.
+- [`prog2.ipynb`](./L7/prog2.ipynb): Evaluates an essay in parallel for
+  language quality, depth of analysis, and clarity of thought. Pydantic
+  structured output provides feedback and scores, which are combined into an
+  overall evaluation.
 
-The notebook uses a typed `BMIState` dictionary to pass data between nodes.
+### L8 - Conditional workflows
 
-### L6
+- [`prog1.ipynb`](./L8/prog1.ipynb): Uses conditional edges to calculate
+  quadratic-equation roots based on the discriminant without an LLM.
+- [`prog2.ipynb`](./L8/prog2.ipynb): Analyzes sentiment and diagnoses a
+  technical issue before routing to an appropriate recommendation.
 
-1. Building a sequential workflow with LangGraph.
-2. Using typed dictionaries to manage state between nodes.
-3. Invoking the workflow with an initial state and retrieving the final state.
-4. Using LangGraph to create a simple BMI calculator with labeled categories.
-5. Demonstrating the use of LangGraph's `StateGraph` to define and execute a workflow.
-6. Showcasing the integration of LangGraph with LangChain's Google Generative AI model for prompt chaining.
-7. Illustrating how to create nodes for generating outliers and blogs based on input text.
-8. Highlighting the use of environment variables for API key management in LangGraph workflows.
-9. Providing a clear example of how to structure and execute a LangGraph workflow with typed state dictionaries.
+### L9 - Generate, evaluate, and optimize
 
+- [`prog1.ipynb`](./L9/prog1.ipynb): Generates a LinkedIn post, evaluates it
+  with structured Pydantic output, and iteratively optimizes it using feedback
+  until it is approved or the iteration limit is reached.
 
-### L7
+### L10 - Chatbot
 
-1. Building a structured output model using Pydantic for essay evaluation.
-2. Creating a sequential workflow to evaluate essays based on language quality, depth of analysis, and clarity of thought.
-3. Defining a `UPSCState` typed dictionary to manage the state of the essay evaluation process.
-4. Implementing functions to evaluate language, analysis, and thought clarity of essays, returning feedback and scores.
-5. Demonstrating the use of LangGraph's `StateGraph` to define and execute a workflow for essay evaluation.
-
-### L8 :
-
-### L9 :
-
-### L10 : 
+- [`prog1.ipynb`](./L10/prog1.ipynb): Builds a basic chatbot with a
+  message-based state, `add_messages`, and a Google Generative AI model.
