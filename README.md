@@ -42,3 +42,10 @@ directory represents a lesson or experiment.
 
 - [`prog1.ipynb`](./L10/prog1.ipynb): Builds a basic chatbot with a
   message-based state, `add_messages`, and a Google Generative AI model.
+
+### L11 - Persistence and fault tolerance
+
+- [`prog1.ipynb`](./L11/prog1.ipynb): Demonstrates the use of persistence and
+  fault tolerance in LangGraph. It shows how to save and restore the state of a
+  workflow, allowing it to resume from a checkpoint after an interruption.
+  
